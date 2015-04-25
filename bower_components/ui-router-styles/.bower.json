@@ -1,0 +1,28 @@
+{
+  "name": "ui-router-styles",
+  "version": "0.0.3",
+  "homepage": "https://github.com/AlicanC/ui-router-styles",
+  "authors": [
+    "Alican Çubukçuoğlu <alicancubukcuoglu@gmail.com>"
+  ],
+  "description": "Attach stylesheets to AngularUI Router views.",
+  "main": "ui-router.styles.js",
+  "keywords": [
+    "angular-ui-router",
+    "ui-router",
+    "css",
+    "stylesheet",
+    "angularjs",
+    "angular"
+  ],
+  "_release": "0.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.3",
+    "commit": "bb9ea022200e8b54a06b5f5da53b0aeb4c21f9a9"
+  },
+  "_source": "git://github.com/AlicanC/ui-router-styles.git",
+  "_target": "~0.0.3",
+  "_originalSource": "ui-router-styles",
+  "_direct": true
+}

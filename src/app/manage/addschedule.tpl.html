@@ -1,0 +1,19 @@
+<div style="padding-top:15px; padding-bottom:15px;">
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-3"><h4>#</h4></div>
+		<div class="col-sm-3"><h4>Time</h4></div>
+		<div class="col-sm-3"><input type="hidden" ng-model='newTime'/>{{newTime}}<button class='btn btn-sm btn-primary' ng-click="addTime()"><strong>Add</strong></button>&nbsp;<button class='btn btn-sm btn-primary' ng-click="close()"><strong>Close</strong></button></div>
+	</div>
+	<div>
+		<div class="row" style="padding-top:10px; padding-bottom:10px;">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3 time">{{time[0]}}</div>
+			<div class="col-sm-3">
+				<button id="1" class="btn btn-sm btn-primary">Edit</button>
+	    		<button id="0" class="btn btn-sm btn-primary"><strong>x</strong></button>
+	    	</div>
+		</div>
+	</div>
+</div>

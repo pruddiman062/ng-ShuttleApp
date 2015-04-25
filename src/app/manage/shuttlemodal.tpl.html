@@ -1,0 +1,22 @@
+<div style="width:785px;">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Stop Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+             <th></th>
+          </tr>
+        </thead>
+        <tbody>
+    		<tr>
+    			<td><input type="hidden" name="" ng-model="form.stop.id"/></td>
+    			<td><input type="text" name="" ng-model="form.stop.name" value="{{stop[0]}}"/></td>
+    			<td><input type="text" name="" ng-model="form.stop.lat" value="{{stop[2][0]}}"/></td>
+    			<td><input type="text" name="" ng-model="form.stop.long" value="{{stop[2][1]}}"/></td>
+    			<td><button class="btn btn-sm btn-primary" ng-click="save(form)">Save</button> <button class="btn btn-sm btn-primary" ng-click="close();">Close</button></td>
+    		</tr>
+        </tbody>
+    </table>
+</div>

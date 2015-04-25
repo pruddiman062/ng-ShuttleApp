@@ -1,0 +1,56 @@
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HawkStop</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#" ng-click="logout()">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a id="overview" ui-sref="manage">Overview</a></li>
+            <li><a ui-sref=".shuttle" ng-click="showStops($event, 1)">Manage Schedule</a></li>
+            <li><a ui-sref="#">Administrators</a></li>
+            <li><a ui-sref="#">Export Schedule</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a ui-sref="#">Shuttle Locations</a></li>
+            <li><a ui-sref="#">User Reports</a></li>
+          </ul>
+        </div>
+        <div id="main" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+            <div class="row placeholders">
+               <div class="col-xs-6 col-sm-3 placeholder">
+                 <h2>Bristol</h2>
+                 <span class="text-muted"><a id="Bristol" href="#" ng-click="showStops(false, 1)">Manage</a></span>
+               </div>
+               <div class="col-xs-6 col-sm-3 placeholder">
+                 <h2>Campus</h2>
+                 <span class="text-muted"><a id="Campus" href="#" ng-click="showStops(false, 2)">Manage</a></span>
+               </div>
+               <div class="col-xs-6 col-sm-3 placeholder">
+                 <h2>Bay Point</h2>
+                 <span class="text-muted"><a id="Bay Point" href="#" ng-click="showStops(false, 3)">Manage</a></span>
+               </div>
+            </div>
+            <div ui-view="sub"></div>
+        </div>
+      </div>
+    </div>
+<link rel="stylesheet" href="assets/template/dashboard.css" type="text/css" />

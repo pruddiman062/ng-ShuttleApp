@@ -1,0 +1,28 @@
+
+<div id="lowerPane">
+	<h2 class="sub-header"> Stops: </h2>  
+	
+	<div class="table-responsive">
+	  <table class="table table-striped">
+	    <thead>
+	      <tr>
+	        <th>#</th>
+	        <th>Stop Name</th>
+	        <th>Latitude</th>
+	        <th>Longitude</th>
+	        <th><button class="btn btn-sm btn-primary" ng-click="add()">Add</button></th>
+	      </tr>
+	    </thead>
+	    <tbody>
+		<tr ng-repeat="stop in stops">
+			<div>
+				<td>{{($index+1)}}</td>
+				<td>{{stop[0]}}</td>
+				<td>{{stop[2][0]}}</td>
+				<td>{{stop[2][1]}}</td>
+				<td><button class="btn btn-sm btn-primary" ng-click="edit()">Edit</button> <button class="btn btn-sm btn-primary" ng-click="schedule()">Edit Schedule</button> <button class="btn btn-sm btn-primary" ng-click="deleteStop()"><strong>x</strong></button></td></tr>
+			</div>
+	    </tbody>
+	  </table>
+	</div>
+</div>

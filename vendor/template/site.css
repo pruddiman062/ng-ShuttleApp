@@ -1,0 +1,35 @@
+body{
+	background-color: #003399;
+}
+#content{
+	margin-left:80px;
+	margin-top:80px;
+	background-color:#FFFFFF;
+	border: #000000 1px solid;
+	border-radius:20px;
+	min-height:300;
+	width:500;
+	padding:30px;
+}
+#subs{
+	margin-top:30px;
+}
+
+.padding-modal{
+	padding: 50px;
+}
+
+.row-striped:nth-child(odd) {
+    background: #f9f9f9;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #dddddd;
+	margin:0 !important;
+}
+.row-estriped {
+	background: #FFFFFF;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #dddddd;
+	margin:0 !important;
+}
